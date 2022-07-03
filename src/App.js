@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Em Breve nosso novo Site no ar
+          Em Breve nosso novo portal com mais promoções imperdíveis estará no ar.
         </a>
       </header>
     </div>
