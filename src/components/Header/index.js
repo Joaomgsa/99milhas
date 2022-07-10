@@ -1,44 +1,45 @@
 import React from "react";
+import { NavLink, Link } from "react-router-dom";
 
-import { Collapse, Nav, Navbar, NavbarBrand, NavbarText, NavbarToggler, NavItem, NavLink} from "reactstrap";
+import logo from '../../assets/images/logo-removebg.png';
 
 
-export default function header() {
+
+export default function Header() {
+    let activeStyle = {
+        textDecoration: "underline",
+     };
+
+     let activeClassName = "underline";
+    
     return (
         <header>
-            <div>
-                    <Navbar
-                    color="light"
-                    expand="md"
-                    light>
-
-                </Navbar>
-                <NavbarBrand href="/">
-                    99milhas
-                </NavbarBrand>
-                <NavbarToggler onClick={function noRefCheck(){}} />
-                <Collapse navbar>
-                    <Nav 
-                        className="me-auto"
-                        navbar
-                    >
-                        <NavItem>
-                            <NavLink href="/components/">
-                                Components
-                            </NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink href="https://github.com/joaomgsa">
-                                Meu Github
-                            </NavLink>
-                        </NavItem>
-                    </Nav>
-                    <NavbarText>
-                        99milhas
-                    </NavbarText>
-                </Collapse>
-
-            </div>
+            <Link to="/">
+                <img src={logo} className="logo-img" alt="99milhas"/>
+            </Link>
+            <nav>
+                <ul>
+                    <li>
+                        <NavLink to={"/"} style={({isActive}) => isActive ? activeStyle : undefined }>
+                            Home
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to={"/Voos"} style={({isActive}) => isActive ? activeStyle : undefined }>
+                            Voos
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to={"/Pacotes"} style={({isActive}) => isActive ? activeStyle : undefined }>
+                            Pacotes
+                        </NavLink>
+                    </li>
+                </ul>
+                
+            </nav>  
+            
         </header>
-    )
+        
+    );
+
 }
