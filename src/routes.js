@@ -9,8 +9,10 @@ export default function Rotas() {
     return (
         <Routes>
             <Route path="/" exact component={Home} />
-            <Route path="/pacotes" exact component={Pacotes} />
-            <Route path="/pacotes" exact component={Voos} />
+            <Route path="/Pacotes" exact component={Pacotes} />
+            <Route path="/Voos" exact component={Voos} />
+            <Route path="/Promos" exact component={Promos} />
+            <Route path="/Resorts" exact component={Resorts} />
         </Routes>
     );
 }

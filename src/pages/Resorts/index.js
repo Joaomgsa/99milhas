@@ -1,11 +1,11 @@
 import React from "react";
 import { Container } from "reactstrap";
 
-export default function Voos() {
+export default function Resorts() {
     return (
         <div>
         <Container>
-          <h2>Voos</h2>
+          <h2>Resorts</h2>
         </Container>
         </div>
     );
