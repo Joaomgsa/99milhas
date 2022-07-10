@@ -4,8 +4,8 @@
     
 }
 
-ul {
-    list-style: none;
+ul.topnav {
+    list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -16,6 +16,17 @@ li {
     float: left;
 }
 
+li.right {
+    float: right;
+}
+
+@media screen and (max-width: 600px){
+    li.right,
+    li {float: none;}
+    
+}
+
+
 .navlink-a {
     display:block;
     color: black;
@@ -24,3 +35,8 @@ li {
     text-decoration: none;
 
 }
+
+.center {
+    justify-content: center;
+}
+
