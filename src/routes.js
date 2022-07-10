@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Routes, Route, Link, useRouteMatch, useParams 
 import Pacotes from "./pages/Pacotes";
 import Voos from "./pages/Voos";
 import Home from "./pages/Home";
+import Resorts from "./pages/Resorts";
+import Promos from "./pages/Promos";
 
 export default function Rotas() {
     return (
