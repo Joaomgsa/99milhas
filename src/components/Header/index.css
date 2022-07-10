@@ -1,4 +1,26 @@
 .logo-img {
-    max-width: 5%;
-    max-height: 5%;
+    max-width: 10%;
+    max-height: 10%;
+    
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #edebec;
+}
+
+li {
+    float: left;
+}
+
+.navlink-a {
+    display:block;
+    color: black;
+    text-align: center;
+    padding: 34px 36px;
+    text-decoration: none;
+
 }

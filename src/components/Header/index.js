@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
+import './index.css';
 
 import logo from '../../assets/images/logo-removebg.png';
 
@@ -20,17 +21,17 @@ export default function Header() {
             <nav>
                 <ul>
                     <li>
-                        <NavLink to={"/"} style={({isActive}) => isActive ? activeStyle : undefined }>
+                        <NavLink to={"/"} className="navlink-a" style={({isActive}) => isActive ? activeStyle : undefined }>
                             Home
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to={"/Voos"} style={({isActive}) => isActive ? activeStyle : undefined }>
+                        <NavLink to={"/Voos"} className="navlink-a" style={({isActive}) => isActive ? activeStyle : undefined }>
                             Voos
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to={"/Pacotes"} style={({isActive}) => isActive ? activeStyle : undefined }>
+                        <NavLink to={"/Pacotes"} className="navlink-a" style={({isActive}) => isActive ? activeStyle : undefined }>
                             Pacotes
                         </NavLink>
                     </li>
