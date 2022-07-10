@@ -18,9 +18,11 @@ export default function Header() {
     
     return (
         <header>
-            <Link to="/">
-                <img src={logo} className="logo-img" alt="99milhas"/>
-            </Link>
+            <div>
+                <Link to="/">
+                    <img src={logo} className="logo-img" alt="99milhas"/>
+                </Link>
+            </div>    
                 <div className="center">
                     <nav>
                         <ul className="topnav">
@@ -51,8 +53,7 @@ export default function Header() {
                         </ul>
                         
                     </nav>
-                </div>  
-            
+                </div>             
         </header>
         
     );
