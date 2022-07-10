@@ -4,6 +4,8 @@ import './index.css';
 
 import logo from '../../assets/images/logo-removebg.png';
 
+import { GiAirplaneDeparture, GiBeachBag, GiStarProminences, GiFamilyHouse } from 'react-icons/gi';
+
 
 
 export default function Header() {
@@ -21,18 +23,27 @@ export default function Header() {
             <nav>
                 <ul>
                     <li>
-                        <NavLink to={"/"} className="navlink-a" style={({isActive}) => isActive ? activeStyle : undefined }>
-                            Home
-                        </NavLink>
-                    </li>
-                    <li>
                         <NavLink to={"/Voos"} className="navlink-a" style={({isActive}) => isActive ? activeStyle : undefined }>
+                        <GiAirplaneDeparture size={32}/>
                             Voos
                         </NavLink>
                     </li>
                     <li>
                         <NavLink to={"/Pacotes"} className="navlink-a" style={({isActive}) => isActive ? activeStyle : undefined }>
+                        <GiBeachBag size={32}/>
                             Pacotes
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to={"/Promo"} className="navlink-a" style={({isActive}) => isActive ? activeStyle : undefined }>
+                        <GiStarProminences size={32}/>
+                            Promos 2022
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to={"/Resort"} className="navlink-a" style={({isActive}) => isActive ? activeStyle : undefined }>
+                        <GiFamilyHouse size={32}/>
+                            Resorts
                         </NavLink>
                     </li>
                 </ul>
