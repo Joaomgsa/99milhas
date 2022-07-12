@@ -1,15 +1,10 @@
-import React from "react";
 import { Container, Alert, Button, Label, Form, FormGroup, Input, Col, Row } from "reactstrap";
 
-
-export default function Pacotes() {
+export default function TravelForm() {
     return (
         <Container>
             <Form>
                 <Row>
-                    <Label> 
-                        <h2> Pacotes </h2>
-                    </Label>
                     <Col md={6}>
                         <FormGroup>
                             <Label>
