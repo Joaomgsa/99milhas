@@ -1,11 +1,12 @@
 import React from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import './index.css';
 
-import logo from '../../assets/images/logo-removebg.png';
+
 
 
 import { GiAirplaneDeparture, GiBeachBag, GiStarProminences, GiFamilyHouse } from 'react-icons/gi';
+import { Container } from "reactstrap";
 
 
 
@@ -17,12 +18,7 @@ export default function Header() {
      let activeClassName = "underline";
     
     return (
-        <header>
-            <div>
-                <Link to="/">
-                    <img src={logo} className="logo-img" alt="99milhas"/>
-                </Link>
-            </div>    
+        <header>   
                 <div className="center">
                     <nav>
                         <ul className="topnav">

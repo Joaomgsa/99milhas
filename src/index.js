@@ -6,11 +6,14 @@ import App from './App';
 import Header from './components/Header';
 
 
+
 import 'bootstrap/dist/css/bootstrap.min.css'
+import TopNav from './components/TopNav';
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
+      <TopNav />
       <Header/>
       <App />
     </BrowserRouter>   

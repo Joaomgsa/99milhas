@@ -12,8 +12,8 @@ export default function AllRoutes() {
         <Route path="/" element={<Home/>}/>
         <Route path="/voos" element={<Voos/>}/>
         <Route path="/pacotes" element={<Pacotes/>}/>
-        <Route path="/promos" element={<Promos/>}/>
-        <Route path="/resorts" element={<Resorts/>}/>
+        <Route path="/promo" element={<Promos/>}/>
+        <Route path="/resort" element={<Resorts/>}/>
     </Routes>
     );
 }

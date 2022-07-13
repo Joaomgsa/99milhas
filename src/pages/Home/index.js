@@ -1,14 +1,13 @@
 import { Container } from "reactstrap";
-
+import TravelForm from "../../components/TravelForm";
 
 export default function Home() {
     return(
         <main>
-            <div>
-                <Container>
-                    <h3>Voos Com até 50% de Desconto</h3>
-                </Container>
-            </div>
+            <Container>
+                <h2>Voos</h2>
+                <TravelForm/>
+            </Container>
         </main>
     );
 };

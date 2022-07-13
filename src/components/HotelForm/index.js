@@ -1,34 +1,21 @@
 import { Container, Alert, Button, Label, Form, FormGroup, Input, Col, Row, Card, CardBody } from "reactstrap";
 
-export default function TravelForm() {
+export default function HotelForm() {
     return (
         <Container>
-            <Card>
+           <Card>
                 <CardBody>
                     <Form>
                         <Row>
-                            <Col md={6}>
-                                <FormGroup>
-                                    <Label>
-                                        De onde você está Saindo
-                                    </Label>
-                                    <Input
-                                        id="origem"
-                                        name="origem"
-                                        placeholder="Busque um aeroporto"
-                                        type="text"
-                                    />
-                                </FormGroup>
-                            </Col>
-                            <Col md={6}>
+                            <Col md={12}>
                                 <FormGroup>
                                     <Label>
                                         Para onde você vai?
                                     </Label>
                                     <Input
-                                        id="destino"
-                                        name="destino"
-                                        placeholder="Busque um aeroporto"
+                                        id="cidade-hotel"
+                                        name="cidade-hotel"
+                                        placeholder="Busque Cidade ou aeroporto"
                                         type="text"
                                     />
                                 </FormGroup>
@@ -76,12 +63,11 @@ export default function TravelForm() {
                                 </FormGroup>
                             </Col>
                         </Row>
-                        <Button> Buscar Pacotes</Button>
+                        <Button> Buscar Hotéis</Button>
                     </Form>
                 </CardBody>
             </Card>
-
-           {/* <div>
+            {/* <div className="alert-margin">
                 <Alert color="primary">
                     <h3>Tem Milhas Sobrando?</h3> Transforme suas milhas em dinheiro <Button color="primary"> Vender</Button>
                 </Alert>
