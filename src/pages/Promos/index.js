@@ -4,11 +4,9 @@ import TravelForm from "../../components/TravelForm";
 
 export default function Promos() {
     return (
-        <div>
-        <Container>
-          <h2>Promos</h2>
-          <TravelForm/>
-        </Container>
-        </div>
+      <Container>
+        <h2>Promos</h2>
+        <TravelForm/>
+      </Container>
     );
 }

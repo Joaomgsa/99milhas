@@ -3,7 +3,7 @@ import { NavLink, Link } from "react-router-dom";
 import './index.css';
 
 import logo from '../../assets/images/logo-removebg.png';
-import { Container } from "reactstrap";
+
 
 import { GiAirplaneDeparture, GiBeachBag, GiStarProminences, GiFamilyHouse } from 'react-icons/gi';
 
