@@ -1,12 +1,16 @@
-import { Container } from "reactstrap";
-import TravelForm from "../../components/TravelForm";
 import HomeCard from "../../components/HomeCard";
+import PromoGroup from "../../components/PromoGroup";
+import HomeForm from "../../components/HomeForm";
 
 
 export default function Home() {
     return(
         <main>
-            <HomeCard />
+            <HomeCard>
+                <HomeForm/>
+            </HomeCard>
+            <PromoGroup />
         </main>
+    
     );
 };
