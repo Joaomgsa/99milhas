@@ -1,13 +1,12 @@
 import { Container } from "reactstrap";
 import TravelForm from "../../components/TravelForm";
+import HomeCard from "../../components/HomeCard";
+
 
 export default function Home() {
     return(
         <main>
-            <Container>
-                <h2>Voos</h2>
-                <TravelForm/>
-            </Container>
+            <HomeCard />
         </main>
     );
 };

@@ -1,7 +1,10 @@
 import { Container, Alert, Button, Label, Form, FormGroup, Input, Col, Row, Card, CardBody } from "reactstrap";
 
+import './styles.css';
+
 export default function TravelForm() {
     return (
+    <div className="background-travelform">
         <Container>
             <Card>
                 <CardBody>
@@ -80,14 +83,7 @@ export default function TravelForm() {
                     </Form>
                 </CardBody>
             </Card>
-
-           {/* <div>
-                <Alert color="primary">
-                    <h3>Tem Milhas Sobrando?</h3> Transforme suas milhas em dinheiro <Button color="primary"> Vender</Button>
-                </Alert>
-    </div> */}
-
-
         </Container>
+    </div>
     );
 }

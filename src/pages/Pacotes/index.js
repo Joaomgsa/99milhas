@@ -5,9 +5,6 @@ import HotelForm from "../../components/HotelForm";
 
 export default function Pacotes() {
     return (
-        <Container>
-        <h2>Pacotes</h2>
         <HotelForm/>
-      </Container>
     );
 }
