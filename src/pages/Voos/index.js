@@ -4,6 +4,7 @@ import { Container } from "reactstrap";
 
 export default function Voos() {
     return (
+      
           <TravelForm/>      
     );
 }
